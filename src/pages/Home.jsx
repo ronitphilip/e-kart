@@ -8,7 +8,7 @@ import { fetchProducts } from '../redux/slices/productSlice'
 const Home = () => {
   const dispatch = useDispatch()
   const {allProducts,loading,errorMsg} = useSelector(state=>state.productReducer)
-  console.log(allProducts,loading,errorMsg);
+  // console.log(allProducts,loading,errorMsg);
   
   useEffect(()=>{
     dispatch(fetchProducts())
